@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using AliHayderBase.Web.Dtos.Request;
 using AliHayderBase.Web.Core.Interface;
+using AliHayderBase.Shared.DTOs.Request;
 namespace AliHayderBase.Web.Controllers
 {
     [ApiController]

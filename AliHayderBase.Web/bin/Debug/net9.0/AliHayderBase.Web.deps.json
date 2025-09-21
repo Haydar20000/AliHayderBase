@@ -941,7 +941,8 @@
       },
       "AliHayderBase.Shared/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "9.0.5"
+          "Microsoft.AspNetCore.Components.Web": "9.0.5",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
         },
         "runtime": {
           "AliHayderBase.Shared.dll": {

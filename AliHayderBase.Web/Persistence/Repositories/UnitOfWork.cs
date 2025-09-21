@@ -16,8 +16,6 @@ namespace AliHayderBase.Web.Persistence.Repositories
             User = new UsersRepository(_context);
         }
 
-
-
         public int Complete()
         {
             return _context.SaveChanges();

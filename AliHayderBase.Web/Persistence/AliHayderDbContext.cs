@@ -1,5 +1,5 @@
 
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MySchoolBackend.HelperFunctions.SeedConfiguration;

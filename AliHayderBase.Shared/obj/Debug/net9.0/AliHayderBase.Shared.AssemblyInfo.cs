@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AliHayderBase.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e28cdb3d38f65fb5947c87bd061ad647d254e717")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41cd30ffa50d10e3e6fa887b96bd97ddc75ca673")]
 [assembly: System.Reflection.AssemblyProductAttribute("AliHayderBase.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AliHayderBase.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

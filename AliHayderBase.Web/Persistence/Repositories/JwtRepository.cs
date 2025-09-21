@@ -2,10 +2,10 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.DTOs.Request;
+using AliHayderBase.Shared.DTOs.Response;
+using AliHayderBase.Shared.Models;
 using AliHayderBase.Web.Core.Interface;
-using AliHayderBase.Web.Dtos.Request;
-using AliHayderBase.Web.Dtos.Response;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AliHayderBase.Web.Persistence.Repositories
@@ -36,7 +36,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
                 return new JwtResponseDto
                 {
                     IsSuccessful = false,
-                    Errors = new List<string> { ex.Message }
+                    Errors = [ex.Message]
                 };
             }
         }
@@ -49,7 +49,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
 
             return new JwtResponseDto
             {
-                Token = Convert.ToBase64String(randomBytes),
+                RefreshToken = Convert.ToBase64String(randomBytes),
                 IsSuccessful = true
             };
         }

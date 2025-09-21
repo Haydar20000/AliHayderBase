@@ -1,4 +1,4 @@
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

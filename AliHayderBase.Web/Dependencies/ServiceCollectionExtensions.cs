@@ -1,5 +1,5 @@
 using System.Text;
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.Models;
 using AliHayderBase.Web.Core.Interface;
 using AliHayderBase.Web.Persistence;
 using AliHayderBase.Web.Persistence.Repositories;

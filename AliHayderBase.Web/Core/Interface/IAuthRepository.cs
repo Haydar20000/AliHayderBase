@@ -1,9 +1,9 @@
 ﻿
 
-using AliHayderBase.Web.Core.Domain;
-using AliHayderBase.Web.Core.Interface;
-using AliHayderBase.Web.Dtos.Request;
-using AliHayderBase.Web.Dtos.Response;
+using AliHayderBase.Shared.DTOs.Request;
+using AliHayderBase.Shared.DTOs.Response;
+using AliHayderBase.Shared.Models;
+
 
 
 namespace AliHayderBase.Web.Core.Interface

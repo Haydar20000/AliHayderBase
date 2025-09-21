@@ -1,8 +1,8 @@
 
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.DTOs.Request;
+using AliHayderBase.Shared.DTOs.Response;
+using AliHayderBase.Shared.Models;
 using AliHayderBase.Web.Core.Interface;
-using AliHayderBase.Web.Dtos.Request;
-using AliHayderBase.Web.Dtos.Response;
 using Google.Apis.Auth;
 using Microsoft.AspNetCore.Identity;
 
@@ -80,6 +80,13 @@ namespace AliHayderBase.Web.Persistence.Repositories
                     Roles = roles
                 };
                 var jwtResponse = _jwtRepository.GenerateAccessToken(jwtRequest);
+                if (string.IsNullOrEmpty(jwtResponse.Token))
+                {
+                    response.IsSuccessful = false;
+                    response.Errors.Add("Access token generation failed");
+                    return response;
+                }
+
                 if (!jwtResponse.IsSuccessful)
                 {
                     response.IsSuccessful = false;
@@ -93,7 +100,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
                     response.Errors.AddRange(refreshToken.Errors);
                     return response;
                 }
-                user.RefreshToken = refreshToken.Token;
+                user.RefreshToken = refreshToken.RefreshToken;
                 user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
                 var result = await _userManager.UpdateAsync(user);
                 if (!result.Succeeded)
@@ -104,7 +111,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
                 }
 
                 response.AccessToken = jwtResponse.Token;
-                response.RefreshToken = refreshToken.Token;
+                response.RefreshToken = refreshToken.RefreshToken;
                 response.IsSuccessful = true;
                 response.Errors = ["Ok"];
                 return response;

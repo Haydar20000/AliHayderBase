@@ -1,9 +1,9 @@
 using System.Net.Mail;
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.DTOs.Request;
+using AliHayderBase.Shared.DTOs.Response;
+using AliHayderBase.Shared.Models;
 using AliHayderBase.Web.Core.Interface;
-using AliHayderBase.Web.Dtos.Mappers;
-using AliHayderBase.Web.Dtos.Request;
-using AliHayderBase.Web.Dtos.Response;
+using AliHayderBase.Web.Core.Mapper;
 using Microsoft.AspNetCore.Identity;
 
 
@@ -112,7 +112,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
                 response.Errors.AddRange(refreshToken.Errors);
                 return response;
             }
-            user.RefreshToken = refreshToken.Token;
+            user.RefreshToken = refreshToken.RefreshToken;
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(_configuration.GetValue<int>("Jwt:ExpirationInDays"));
             var result = await _userManager.UpdateAsync(user);
             if (!result.Succeeded)
@@ -122,8 +122,8 @@ namespace AliHayderBase.Web.Persistence.Repositories
                 return response;
             }
 
-            response.AccessToken = jwtResponse.Token;
-            response.RefreshToken = refreshToken.Token;
+            response.AccessToken = jwtResponse.RefreshToken;
+            response.RefreshToken = refreshToken.RefreshToken;
             response.IsSuccessful = true;
             return response;
         }
@@ -148,6 +148,12 @@ namespace AliHayderBase.Web.Persistence.Repositories
             var accessToken = _jwtRepository.GenerateAccessToken(jwtRequest);
             response.IsSuccessful = true;
             response.Token = accessToken.Token;
+            var newRefreshToken = _jwtRepository.GenerateRefreshToken();
+            user.RefreshToken = newRefreshToken.RefreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            _unitOfWork.Complete();
+            response.RefreshToken = newRefreshToken.RefreshToken;
+
             return response;
         }
 

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Threading.Tasks;
+using AliHayderBase.Shared.DTOs.Request;
+using AliHayderBase.Shared.DTOs.Response;
 using AliHayderBase.Web.Core.Interface;
-using AliHayderBase.Web.Dtos.Request;
-using AliHayderBase.Web.Dtos.Response;
+
 
 namespace AliHayderBase.Web.Persistence.Repositories
 {

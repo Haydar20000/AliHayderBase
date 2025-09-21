@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\AliHayderBase.styles.css",
+      "PackagePath": "staticwebassets\\AliHayderBase.styles.css"
+    },
+    {
       "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },

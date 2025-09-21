@@ -1,5 +1,6 @@
 
-using AliHayderBase.Web.Core.Domain;
+using AliHayderBase.Shared.Models;
+
 
 namespace AliHayderBase.Web.Core.Interface
 {
