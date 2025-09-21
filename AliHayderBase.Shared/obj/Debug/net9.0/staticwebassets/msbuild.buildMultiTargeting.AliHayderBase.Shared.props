@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AliHayderBase.Shared.props" />
+</Project>

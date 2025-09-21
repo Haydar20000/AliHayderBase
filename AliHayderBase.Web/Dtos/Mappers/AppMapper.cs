@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AliHayderBase.Web.Core.Domain;
 using AliHayderBase.Web.Dtos.Request;
-using MySchoolBackend.Core.Domain;
+
 
 namespace AliHayderBase.Web.Dtos.Mappers
 {

@@ -1,7 +1,7 @@
 
+using AliHayderBase.Web.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MySchoolBackend.Core.Domain;
 
 namespace MySchoolBackend.HelperFunctions.SeedConfiguration
 {

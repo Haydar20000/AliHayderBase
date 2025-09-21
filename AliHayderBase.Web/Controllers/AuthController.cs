@@ -16,7 +16,15 @@ namespace AliHayderBase.Web.Controllers
             _externalLogin = externalLogin;
             _configuration = configuration;
         }
+        [HttpGet("check")]
+        //[Authorize(Roles = "Admin, visitor")]
+        public IActionResult Check()
+        {
+            var key1 = _configuration["Google:ClientId"];
+            var z = _configuration["Google:ANDROIDd"];
 
+            return Ok(z + "     " + key1 ?? "No Key");
+        }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto model)
         {

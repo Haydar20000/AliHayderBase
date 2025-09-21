@@ -22,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Add Swagger services to the container.... End
 
-
+builder.Services.AddControllers();
 
 // Add device-specific services used by the AliHayderBase.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
@@ -46,6 +46,8 @@ else
 }
 
 app.UseHttpsRedirection();
+
+app.MapControllers();
 
 app.UseAuthentication();
 app.UseAuthorization();

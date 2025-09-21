@@ -1,5 +1,5 @@
 
-using MySchoolBackend.Core.Domain;
+using AliHayderBase.Web.Core.Domain;
 
 namespace AliHayderBase.Web.Core.Interface
 {
