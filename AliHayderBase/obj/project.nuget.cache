@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WgJA3cC3j34=",
+  "dgSpecHash": "Fh/azJwNBCc=",
   "success": true,
-  "projectFilePath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\AliHayderBase.csproj",
+  "projectFilePath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hay19\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.5\\microsoft.aspnetcore.authorization.9.0.5.nupkg.sha512",

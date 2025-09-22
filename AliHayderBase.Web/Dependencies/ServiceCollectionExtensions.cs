@@ -1,5 +1,7 @@
 using System.Text;
 using AliHayderBase.Shared.Models;
+using AliHayderBase.Web.Client.Core.Interface;
+using AliHayderBase.Web.Client.Services;
 using AliHayderBase.Web.Core.Interface;
 using AliHayderBase.Web.Persistence;
 using AliHayderBase.Web.Persistence.Repositories;
@@ -73,6 +75,15 @@ namespace AliHayderBase.Web.Dependencies
                 .AddScoped<IEmailServicesRepository, EmailServicesRepository>()
                 .AddScoped<IJwtRepository, JwtRepository>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowWebClient", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5000")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+                });
+            });
             return services;
         }
 

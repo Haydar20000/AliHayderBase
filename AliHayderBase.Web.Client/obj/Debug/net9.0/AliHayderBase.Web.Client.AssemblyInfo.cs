@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AliHayderBase.Web.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f537e43d8c8aeaa657ce9e69ecb548a7535187a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62504b45cd5b595d76f48ffcb5a46fe2474c89dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AliHayderBase.Web.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AliHayderBase.Web.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

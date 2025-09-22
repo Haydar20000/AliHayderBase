@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\AliHayderBase.styles.css",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\obj\\Debug\\net9.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\AliHayderBase.styles.css",
       "PackagePath": "staticwebassets\\AliHayderBase.styles.css"
     },
     {
-      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\wwwroot\\app.css",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase\\wwwroot\\index.html",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

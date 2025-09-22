@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Run Web Client + Web API",
+      "configurations": ["Web Client", "Web API"]
+    }
+  ],
+  "configurations": [
+    // {
+    //   "name": "Web Client",
+    //   "type": "blazorwasm",
+    //   "request": "launch",
+    //   "cwd": "${workspaceFolder}/AliHayderBase.Web.Client"
+    // },
+    {
+      "name": "Web API",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/AliHayderBase.Web/bin/Debug/net9.0/AliHayderBase.Web.dll",
+      "cwd": "${workspaceFolder}/AliHayderBase.Web"
+    }
+  ]
+}
+//"D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Web\bin\Debug\net9.0\AliHayderBase.Web.dll"

@@ -52,7 +52,13 @@ app.MapControllers();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
+app.UseRouting();
+app.UseCors("AllowWebClient");
+
+app.MapFallbackToFile("index.html");
+
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()

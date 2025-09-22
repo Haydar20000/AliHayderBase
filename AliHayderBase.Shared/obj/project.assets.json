@@ -1016,11 +1016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
+      "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
       "projectName": "AliHayderBase.Shared",
-      "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
+      "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
       "packagesPath": "C:\\Users\\hay19\\.nuget\\packages\\",
-      "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\obj\\",
+      "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

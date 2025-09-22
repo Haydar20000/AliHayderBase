@@ -1,0 +1,44 @@
+@page "/login"
+@using AliHayderBase.Shared.DTOs.Request
+@using AliHayderBase.Web.Client.Core.Interface
+
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+
+<h3>Login</h3>
+
+<EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <InputText @bind-Value="loginModel.Email" placeholder="Email" />
+    <InputText @bind-Value="loginModel.Password" type="password" placeholder="Password" />
+    <button type="submit">Login</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(error))
+{
+    <p style="color:red">@error</p>
+}
+
+@code {
+    private LoginRequestDto loginModel = new LoginRequestDto {
+    Email = string.Empty,
+    Password = string.Empty
+};
+
+    private string? error;
+
+    private async Task HandleLogin()
+    {
+        var result = await AuthService.LoginAsync(loginModel);
+        if (result?.IsSuccessful == true)
+        {
+            Navigation.NavigateTo("/");
+        }
+        else
+        {
+            error = result?.Errors?.FirstOrDefault() ?? "Login failed";
+        }
+    }
+}

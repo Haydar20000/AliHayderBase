@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AliHayderBase.Shared.bundle.scp.css",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AliHayderBase.Shared.bundle.scp.css",
       "PackagePath": "staticwebassets\\AliHayderBase.Shared.fpmbqbgt0g.bundle.scp.css"
     },
     {
-      "Id": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\app.css",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\favicon.png",
+      "Id": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

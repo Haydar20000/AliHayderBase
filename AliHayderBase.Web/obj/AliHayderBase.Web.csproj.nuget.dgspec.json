@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj": {}
+    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj": {}
   },
   "projects": {
-    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj": {
+    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
+        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
         "projectName": "AliHayderBase.Shared",
-        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
+        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj",
         "packagesPath": "C:\\Users\\hay19\\.nuget\\packages\\",
-        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\obj\\",
+        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,14 +80,14 @@
         }
       }
     },
-    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
+    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj",
+        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj",
         "projectName": "AliHayderBase.Web.Client",
-        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj",
+        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj",
         "packagesPath": "C:\\Users\\hay19\\.nuget\\packages\\",
-        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\obj\\",
+        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -109,8 +109,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj": {
-                "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj"
+              "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj": {
+                "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Shared\\AliHayderBase.Shared.csproj"
               }
             }
           }
@@ -132,6 +132,10 @@
           "targetAlias": "net9.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "target": "Package",
               "version": "[9.0.5, )"
             },
@@ -179,14 +183,14 @@
         }
       }
     },
-    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj": {
+    "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
+        "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
         "projectName": "AliHayderBase.Web",
-        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
+        "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
         "packagesPath": "C:\\Users\\hay19\\.nuget\\packages\\",
-        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\obj\\",
+        "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -208,8 +212,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
-                "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj"
+              "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
+                "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj"
               }
             }
           }
@@ -247,6 +251,12 @@
               "version": "[9.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.9, )"
             },
