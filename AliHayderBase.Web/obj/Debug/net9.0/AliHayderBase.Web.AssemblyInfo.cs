@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AliHayderBase.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41cd30ffa50d10e3e6fa887b96bd97ddc75ca673")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f537e43d8c8aeaa657ce9e69ecb548a7535187a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("AliHayderBase.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AliHayderBase.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

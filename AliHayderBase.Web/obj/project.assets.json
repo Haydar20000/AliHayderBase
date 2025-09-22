@@ -4096,11 +4096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
+      "projectUniqueName": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
       "projectName": "AliHayderBase.Web",
-      "projectPath": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
+      "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
       "packagesPath": "C:\\Users\\hay19\\.nuget\\packages\\",
-      "outputPath": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\obj\\",
+      "outputPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4122,8 +4122,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
-              "projectPath": "d:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj"
+            "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj": {
+              "projectPath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase\\AliHayderBase.Web.Client\\AliHayderBase.Web.Client.csproj"
             }
           }
         }
