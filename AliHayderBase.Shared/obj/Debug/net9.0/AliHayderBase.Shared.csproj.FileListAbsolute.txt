@@ -36,8 +36,8 @@ d:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase\AliHayderBase.Shared\
 d:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\refint\AliHayderBase.Shared.dll
 d:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\AliHayderBase.Shared.pdb
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\ref\AliHayderBase.Shared.dll
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.staticwebassets.endpoints.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.staticwebassets.runtime.json
+D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.staticwebassets.endpoints.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.deps.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.dll
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\bin\Debug\net9.0\AliHayderBase.Shared.pdb

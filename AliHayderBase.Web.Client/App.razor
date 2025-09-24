@@ -1,7 +1,17 @@
-@using AliHayderBase.Web.Client.Shared
+@using AliHayderBase.Shared.Layout
 
+<Router AppAssembly="@typeof(AliHayderBase.Shared.Pages.Login).Assembly">
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+    </Found>
+    <NotFound>
+        <LayoutView Layout="@typeof(MainLayout)">
+            <p>Page not found.</p>
+        </LayoutView>
+    </NotFound>
+</Router>
 
-<Router AppAssembly="@typeof(App).Assembly">
+@* <Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
     </Found>
@@ -10,4 +20,4 @@
             <p>Sorry, there's nothing at this address.</p>
         </LayoutView>
     </NotFound>
-</Router>
+</Router> *@

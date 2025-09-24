@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using AliHayderBase.Shared.Services;
-using AliHayderBase.Web.Client.Services;
-using AliHayderBase.Web.Client.Core.Interface;
 using AliHayderBase.Web.Client;
+using AliHayderBase.Shared.Core.Interfaces;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
