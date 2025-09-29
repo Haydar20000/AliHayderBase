@@ -51,15 +51,10 @@ D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\rjimswa.dswa.cache.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\scopedcss\bundle\AliHayderBase.Shared.styles.css
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\scopedcss\projectbundle\AliHayderBase.Shared.bundle.scp.css
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\compressed\c5sbn8yiem-da95v2qkru.gz
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\compressed\1sp5rfpvhn-6gzpyzhau4.gz
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\compressed\gpes6f4nh4-8inm30yfxf.gz
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\compressed\0gu5mlstp4-fpmbqbgt0g.gz
-D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\compressed\6ce8gk8q3x-fpmbqbgt0g.gz
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\staticwebassets.build.json
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\Blazor\BlazorHybridMAUI+web\AliHayderBase\AliHayderBase.Shared\obj\Debug\net9.0\staticwebassets.development.json

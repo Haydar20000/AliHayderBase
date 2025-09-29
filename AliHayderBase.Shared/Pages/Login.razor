@@ -1,9 +1,25 @@
 @page "/login"
+@using AliHayderBase.Shared.Core.Interfaces
+
+
+<h3>Login Test</h3>
+
+@inject IAuthService AuthService
+
+@inject NavigationManager Navigation
+
+<p>Navigation works: @Navigation.Uri</p>
+
+
+
+
+
+@* @page "/login"
 
 
 @using AliHayderBase.Shared.DTOs.Request
 @using AliHayderBase.Shared.Core.Interfaces
-@using AliHayderBase.Shared.Layout
+@using AliHayderBase.Shared.Components
 @inject IAuthService AuthService
 @inject NavigationManager Navigation
 @layout MainLayout
@@ -44,4 +60,4 @@
             error = result?.Errors?.FirstOrDefault() ?? "Login failed";
         }
     }
-}
+} *@

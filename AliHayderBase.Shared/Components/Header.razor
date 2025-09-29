@@ -1,0 +1,91 @@
+@using AliHayderBase.Shared.Core.Interfaces
+@using Microsoft.AspNetCore.Components.Authorization
+  
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Navigation
+@inject IAuthService AuthService
+
+
+<AuthorizeView>
+    <Authorized>
+        <p>مرحبا @context.User.Identity.Name</p>
+    </Authorized>
+    <NotAuthorized>
+        <NavLink href="/login">تسجيل الدخول</NavLink>
+    </NotAuthorized>
+</AuthorizeView>
+  @* <div id="theHeader"> *@
+  
+      @* <div class="title-contaner">
+          <div class="logo-section">
+              <a href="~/Home/index"><img class="logo" src="~/img/logo01.png" alt="Logo" /></a>
+          </div>
+          <div class="titel-section">
+              <a href="~/Home/index" class="text-ar">نقابة الكيميائيين العراقية</a>
+              <a href="~/Home/index" class="text-ar">Iraqi Chemists Syndicate</a>
+          </div>
+          <div class="empty-section">
+          </div>
+      </div>            *@
+      @* <div class="menu-wrap">
+          <a class="back" href="javascript:history.go(-1)"></a>
+          <div class="backb"><div><i class="fa fa-chevron-left"></i></div></div>
+      </div> *@
+      @* <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+              <div>
+                  <div>
+                      @if (signInManager.IsSignedIn(User))
+                      {
+                          var _user = await userManager.FindByNameAsync(User.Identity.Name);
+
+                          if (_user.EmailConfirmed)
+                          {
+                              <ul>
+                                  <li class="username" style="font-size:20px">مرحبا</li>
+                                  <li class="username" style="font-size:20px">@_user.UserFullName</li>
+                              </ul>
+
+                              if (User.IsInRole("AdminAli") || User.IsInRole("") || User.IsInRole("") || User.IsInRole("") || User.IsInRole(""))
+                              {
+                                  <ul>
+                                      <li class="username">أدارة الموقع</li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Blogs">المنشورات</a></li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Categories">الفئات</a></li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImportantLinks">الروابط المهمة</a></li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Departments">الفروع</a></li>
+                                      <li class="username">أدارة المستخدمين</li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Administration">المستخدمين</a></li>
+                                      <li class="username">أدارة الاعضاء</li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="SyndicateManagment">الاعضاء</a></li>
+                                      <li class="username">الادارة الاعلامية</li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImagesGallery">الصور</a></li>
+                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImagesGallery">الفيديو</a></li>
+                                  </ul>
+                                  <hr class="line">
+                              }
+                          }
+                          <ul>
+                             
+                              <li class="AdminPanalbutton"><a asp-controller="Administration" asp-action="SendEmail" asp-route-id="@_user.Id" asp-route-fromUser="True">ارسل رساله</a></li>
+                              <li class="AdminPanalbutton">
+                                  <form id="Logoutform" method="post" asp-action="LogOut" asp-controller="Account">
+                                      <a href="javascript:$('#Logoutform').submit();">تسجيل الخروج</a>
+                                  </form>
+                              </li>
+                          </ul>
+                      }
+                      else
+                      {
+                          <ul>
+                              <li class="AdminPanalbutton"><a href="~/Account/Register">التسجيل في الموقع</a></li>
+                              <li class="AdminPanalbutton"><a href="~/Account/Login">تسجيل الدخول</a></li>
+                          </ul>
+                      }
+                  </div>
+              </div>
+          </div>
+      </div> *@
+  @* </div> *@

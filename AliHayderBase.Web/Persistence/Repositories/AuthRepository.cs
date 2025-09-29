@@ -122,8 +122,8 @@ namespace AliHayderBase.Web.Persistence.Repositories
                 return response;
             }
 
-            response.AccessToken = jwtResponse.RefreshToken;
-            response.RefreshToken = refreshToken.RefreshToken;
+            response.Token = jwtResponse.RefreshToken!;
+            response.RefreshToken = refreshToken.RefreshToken!;
             response.IsSuccessful = true;
             return response;
         }

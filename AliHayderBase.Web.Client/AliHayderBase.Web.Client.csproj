@@ -11,14 +11,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="9.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="9.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.5" />
   </ItemGroup>
   
 
   <ItemGroup>
-    <ProjectReference Include="..\AliHayderBase.Shared\AliHayderBase.Shared.csproj" />    
+    <ProjectReference Include="..\AliHayderBase.Shared\AliHayderBase.Shared.csproj" />
+    <ProjectReference Include="..\AliHayderBase.Shared.Core.Interfaces\AliHayderBase.Shared.Core.Interfaces.csproj" />
   </ItemGroup>
+  <Target Name="CopySharedAssets" AfterTargets="Build">
+    <Copy SourceFiles="..\AliHayderBase.Shared\Assets\Css\Style.css" DestinationFolder="wwwroot\Css\" />
+  </Target>
 
 </Project>
 

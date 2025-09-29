@@ -27,6 +27,7 @@ namespace AliHayderBase.Web.Persistence.Repositories
 
                 return new JwtResponseDto
                 {
+                    AccessTokenExpiry = DateTime.UtcNow.AddMinutes(30),
                     Token = new JwtSecurityTokenHandler().WriteToken(token),
                     IsSuccessful = true
                 };
@@ -83,7 +84,10 @@ namespace AliHayderBase.Web.Persistence.Repositories
      {
          new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
          new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
-         new Claim("email_verified", user.EmailConfirmed.ToString())
+         new Claim("email_verified", user.EmailConfirmed.ToString()),
+         new Claim(JwtRegisteredClaimNames.Exp,
+    new DateTimeOffset(DateTime.UtcNow.AddMinutes(30)).ToUnixTimeSeconds().ToString())
+
      };
 
             claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));

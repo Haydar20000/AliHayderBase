@@ -1,0 +1,19 @@
+@inherits LayoutComponentBase
+
+@using AliHayderBase.Shared.Core.Interfaces
+@inject IAuthService AuthService
+@inject NavigationManager Navigation
+
+<div id="theHeader">
+    <Header />
+</div>
+
+<div id="theBody">
+    <main>
+        @Body
+    </main>
+</div>
+
+<div id="theFooter">
+    <Footer />
+</div>

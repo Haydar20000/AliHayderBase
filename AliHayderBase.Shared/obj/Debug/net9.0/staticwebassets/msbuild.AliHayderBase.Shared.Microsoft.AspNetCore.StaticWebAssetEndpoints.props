@@ -1,17 +1,5 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/AliHayderBase.Shared/AliHayderBase.Shared.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AliHayderBase.Shared.fpmbqbgt0g.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-s\u002B0lKWF61jcXkzMJiea2g1vwXMF2o0sQ1t6HSmbSE8k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5930"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022s\u002B0lKWF61jcXkzMJiea2g1vwXMF2o0sQ1t6HSmbSE8k=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 14:39:13 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/AliHayderBase.Shared/AliHayderBase.Shared.fpmbqbgt0g.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AliHayderBase.Shared.fpmbqbgt0g.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fpmbqbgt0g"},{"Name":"integrity","Value":"sha256-s\u002B0lKWF61jcXkzMJiea2g1vwXMF2o0sQ1t6HSmbSE8k="},{"Name":"label","Value":"_content/AliHayderBase.Shared/AliHayderBase.Shared.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5930"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022s\u002B0lKWF61jcXkzMJiea2g1vwXMF2o0sQ1t6HSmbSE8k=\u0022"},{"Name":"Last-Modified","Value":"Wed, 24 Sep 2025 14:39:13 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AliHayderBase.Shared/app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

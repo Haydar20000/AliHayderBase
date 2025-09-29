@@ -1,25 +1,27 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using AliHayderBase.Shared.Services;
 using AliHayderBase.Web.Client;
 using AliHayderBase.Shared.Core.Interfaces;
+using Microsoft.AspNetCore.Components.Authorization;
+using Blazored.LocalStorage;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
-// Add device-specific services used by the AliHayderBase.Shared project
-//builder.Services.AddSingleton<IFormFactor, FormFactor>();
-
-//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.RootComponents.Add<App>("#app");
 
-// Read from config
-//var apiBaseUrl = builder.Configuration["ApiBaseUrl"] ?? "http://localhost:5127";
 var apiBaseUrl = "https://localhost:7090";
 
-// Register HttpClient for API calls
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(apiBaseUrl) });
+builder.Services.AddBlazoredLocalStorage();
+builder.Services.AddAuthorizationCore();
 
-// Register your services
-builder.Services.AddScoped<IAuthService, AuthService>();
+// IAuthService
+builder.Services.AddScoped<WebAuthService>();
+builder.Services.AddScoped<IAuthService>(sp => sp.GetRequiredService<WebAuthService>());
+
+// AuthenticationStateProvider
+builder.Services.AddScoped<AuthenticationStateProvider, WebAuthProvider>();
+
+builder.Services.AddScoped(sp =>
+    new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 
 await builder.Build().RunAsync();
