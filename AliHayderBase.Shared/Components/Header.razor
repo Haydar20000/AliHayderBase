@@ -1,10 +1,164 @@
 @using AliHayderBase.Shared.Core.Interfaces
 @using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager Navigation
+@inject IAuthService AuthService
+@inject INavigationTracker Tracker
+
+<div class="title-container">
+    <div class="logo-section">
+        <NavLink href="/"><img class="logo" src="img/logo.jpg" alt="Logo" /></NavLink>
+    </div>
+    <div class="title-section">
+        <NavLink href="/" class="text-ar">نقابة صيادلة العراق</NavLink>
+        <NavLink href="/" class="text-ar">Syndicate of Iraqi Pharmacists</NavLink>
+    </div>
+    <div class="empty-section"></div>
+</div>
+
+<div class="menu-wrap">
+    <button @onclick="GoBack" class="backb"><i class="fa fa-chevron-left"></i></button>
+</div>
+
+<div class="menu-wrap">
+    <button @onclick="ToggleMenu" class="hamburger @(isMenuOpen ? "is-open" : "")">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </button>
+    <div class="menu @(isMenuOpen ? "menu-open" : "")">
+        <div>
+            <div>
+                <AuthorizeView>
+                    <Authorized>
+                        <p class="username">مرحبا @userName</p>
+                        @if (isAdmin)
+                        {
+                            <ul>
+                                <li class="username">أدارة الموقع</li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/blogs" @onclick="ToggleMenu">المنشورات</NavLink>
+                                </li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/categories" @onclick="ToggleMenu">الفئات</NavLink>
+                                </li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/important-links" @onclick="ToggleMenu">الروابط المهمة</NavLink>
+                                </li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/departments" @onclick="ToggleMenu">الفروع</NavLink>
+                                </li>
+                                <li class="username">أدارة المستخدمين</li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/administration" @onclick="ToggleMenu">المستخدمين</NavLink>
+                                </li>
+                                <li class="username">أدارة الاعضاء</li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/syndicate-managment" @onclick="ToggleMenu">الاعضاء</NavLink>
+                                </li>
+                                <li class="username">الادارة الاعلامية</li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/images-gallery" @onclick="ToggleMenu">الصور</NavLink>
+                                </li>
+                                <li class="AdminPanelButton">
+                                    <NavLink href="/videos" @onclick="ToggleMenu">الفيديو</NavLink>
+                                </li>
+                            </ul>
+                            <hr class="line" />
+                        }
+
+                        <ul>
+                            <li class="AdminPanelButton">
+                                <NavLink href="/send-email" @onclick="ToggleMenu">ارسل رساله</NavLink>
+                            </li>
+                            <li class="AdminPanelButton"><button @onclick="()=> {Logout(); ToggleMenu();}">تسجيل الخروج</button></li>
+                        </ul>
+                    </Authorized>
+                    <NotAuthorized>
+                        <ul>
+                            <li class="AdminPanelButton">
+                                <NavLink href="/register" @onclick="ToggleMenu">التسجيل في الموقع</NavLink>
+                            </li>
+                            <li class="AdminPanelButton">
+                                <NavLink href="/login" @onclick="ToggleMenu">تسجيل الدخول</NavLink>
+                            </li>
+                        </ul>
+                    </NotAuthorized>
+                </AuthorizeView>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool isMenuOpen;
+    private bool isFadingOut;
+    private string? userName;
+    private bool isAdmin;
+
+private async Task ToggleMenu()
+{
+    if (isMenuOpen)
+    {
+        // Start fade-out animation
+        isFadingOut = true;
+
+        // Wait for animation to finish
+        await Task.Delay(400);
+
+        isFadingOut = false;
+        isMenuOpen = false;
+    }
+    else
+    {
+        isMenuOpen = true;
+    }
+}
+
+
+
+    @* private async Task ToggleMenu()
+    {
+        await Task.Delay(300); // Optional: wait for fade-out
+
+        isMenuOpen = !isMenuOpen;
+
+        var state = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = state.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            userName = user.Identity.Name;
+            isAdmin = user.IsInRole("AdminAli");
+        }
+    } *@
+
+    //private void GoBack() => Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+    private void GoBack()
+    {
+        var previous = Tracker.GetPrevious();
+        Navigation.NavigateTo(string.IsNullOrEmpty(previous) ? "/" : previous);
+    }
+
+
+    private async Task Logout()
+    {
+        await AuthService.LogoutAsync();
+        Navigation.NavigateTo("/");
+    }
+
+  
+}
+
+
+
+
+@* @using AliHayderBase.Shared.Core.Interfaces
+@using Microsoft.AspNetCore.Components.Authorization
   
 @inject AuthenticationStateProvider AuthStateProvider
 @inject NavigationManager Navigation
 @inject IAuthService AuthService
-
 
 <AuthorizeView>
     <Authorized>
@@ -13,10 +167,10 @@
     <NotAuthorized>
         <NavLink href="/login">تسجيل الدخول</NavLink>
     </NotAuthorized>
-</AuthorizeView>
-  @* <div id="theHeader"> *@
-  
-      @* <div class="title-contaner">
+</AuthorizeView> *@
+@* <div id="theHeader"> *@
+
+@* <div class="title-contaner">
           <div class="logo-section">
               <a href="~/Home/index"><img class="logo" src="~/img/logo01.png" alt="Logo" /></a>
           </div>
@@ -27,11 +181,11 @@
           <div class="empty-section">
           </div>
       </div>            *@
-      @* <div class="menu-wrap">
+@* <div class="menu-wrap">
           <a class="back" href="javascript:history.go(-1)"></a>
           <div class="backb"><div><i class="fa fa-chevron-left"></i></div></div>
       </div> *@
-      @* <div class="menu-wrap">
+@* <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
           <div class="hamburger"><div></div></div>
           <div class="menu">
@@ -52,25 +206,25 @@
                               {
                                   <ul>
                                       <li class="username">أدارة الموقع</li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Blogs">المنشورات</a></li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Categories">الفئات</a></li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImportantLinks">الروابط المهمة</a></li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Departments">الفروع</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="Blogs">المنشورات</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="Categories">الفئات</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="ImportantLinks">الروابط المهمة</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="Departments">الفروع</a></li>
                                       <li class="username">أدارة المستخدمين</li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="Administration">المستخدمين</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="Administration">المستخدمين</a></li>
                                       <li class="username">أدارة الاعضاء</li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="SyndicateManagment">الاعضاء</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="SyndicateManagment">الاعضاء</a></li>
                                       <li class="username">الادارة الاعلامية</li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImagesGallery">الصور</a></li>
-                                      <li class="AdminPanalbutton"><a asp-action="Index" asp-controller="ImagesGallery">الفيديو</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="ImagesGallery">الصور</a></li>
+                                      <li class="AdminPanelButton"><a asp-action="Index" asp-controller="ImagesGallery">الفيديو</a></li>
                                   </ul>
                                   <hr class="line">
                               }
                           }
                           <ul>
                              
-                              <li class="AdminPanalbutton"><a asp-controller="Administration" asp-action="SendEmail" asp-route-id="@_user.Id" asp-route-fromUser="True">ارسل رساله</a></li>
-                              <li class="AdminPanalbutton">
+                              <li class="AdminPanelButton"><a asp-controller="Administration" asp-action="SendEmail" asp-route-id="@_user.Id" asp-route-fromUser="True">ارسل رساله</a></li>
+                              <li class="AdminPanelButton">
                                   <form id="Logoutform" method="post" asp-action="LogOut" asp-controller="Account">
                                       <a href="javascript:$('#Logoutform').submit();">تسجيل الخروج</a>
                                   </form>
@@ -80,12 +234,12 @@
                       else
                       {
                           <ul>
-                              <li class="AdminPanalbutton"><a href="~/Account/Register">التسجيل في الموقع</a></li>
-                              <li class="AdminPanalbutton"><a href="~/Account/Login">تسجيل الدخول</a></li>
+                              <li class="AdminPanelButton"><a href="~/Account/Register">التسجيل في الموقع</a></li>
+                              <li class="AdminPanelButton"><a href="~/Account/Login">تسجيل الدخول</a></li>
                           </ul>
                       }
                   </div>
               </div>
           </div>
       </div> *@
-  @* </div> *@
+@* </div> *@

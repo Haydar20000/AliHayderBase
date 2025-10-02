@@ -1,1 +1,272 @@
-body {background: gainsboro;}
+@font-face {
+    font-family: Cairo;
+    src: url("../Fonts/Cairo-Regular.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* --primary: #c3dcca;
+    --secondary: #dbeadf;
+    --dark: #1b251e;
+    --light: #c3dcca; */
+    --red: rgb(255, 99, 71);
+    --shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+    --buttonShadow: 1.5px 1.5px 3px -2px rgba(0, 0, 0, 0.66);
+    --primary: #ddd;
+    --secondary: #ccc;
+    --dark: #333;
+    --light: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    color: var(--dark);
+}
+
+body {
+    background: var(--secondary);
+    margin: 0 30px 10px 30px;
+    line-height: 1.4;
+    font-family: Cairo;
+}
+
+/* Remove default list padding */
+ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Remove default Text Decoration from a Tag */
+a {
+    text-decoration: none;
+}
+
+/*The Main Layout static---------------------------- End*/
+/*Title Container*/
+.title-container {
+    height: 140px;
+    background: var(--primary);
+    margin: 20px 0 10px 0;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+/*Logo*/
+.title-container .logo-section {
+    grid-column: 1;
+    margin: auto;
+}
+
+.title-container .logo-section .logo {
+    height: 100px;
+    width: 100px;
+}
+
+/*Logo*/
+/*Main Title*/
+.title-container .title-section {
+    display: flex;
+    grid-column: 2;
+    justify-content: space-around;
+}
+
+.title-container .title-section .text-ar {
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+/*Main Title*/
+.title-container .empty-section {
+    grid-column: 3;
+}
+
+/*The Main Button*/
+.menu-wrap {
+    position: fixed;
+    top: 2%;
+    left: 0;
+    z-index: 20;
+}
+
+/* Back Button */
+.menu-wrap .backb {
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    box-shadow: var(--buttonShadow);
+    border: none;
+}
+.menu-wrap .backb:hover {
+    background: var(--secondary);
+}
+.menu-wrap .backb i {
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+
+/* Hamburger Button */
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 55px;
+    left: 100px;
+    z-index: 21;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    background-color: var(--primary);
+    box-shadow: var(--buttonShadow);
+    cursor: pointer;
+    border: none;
+}
+.menu-wrap .hamburger:hover {
+    background: var(--secondary);
+}
+
+.menu-wrap .hamburger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: var(--dark);
+    transition: all 0.3s ease;
+}
+
+/* Animation when menu is open */
+.menu-wrap .hamburger.is-open .top {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-wrap .hamburger.is-open .middle {
+    opacity: 0;
+}
+
+.menu-wrap .hamburger.is-open .bottom {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu Container */
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+/* Menu When Open */
+.menu-wrap .menu.menu-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add Smooth Entry for Buttons */
+.menu-wrap .menu.menu-open .AdminPanelButton {
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+/* Circular Background */
+.menu-wrap .menu>div {
+    background: var(--primary);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vh;
+    /* width: clamp(100vw, 150vw, 200vw);
+    height: clamp(100vh, 150vh, 200vh); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Inner Content */
+.menu-wrap .menu>div>div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    margin: 0;
+}
+
+/* Buttons Inside the Menu  */
+.AdminPanelButton {
+    list-style: none;
+    margin: 5px auto;
+    background: var(--primary);
+    padding: 0.6rem;
+    color: var(--dark);
+    text-decoration: none;
+    border: var(--secondary) solid .1px;
+    box-shadow: var(--buttonShadow);
+    font-family: Cairo;
+    font-size: 0.9rem;
+    width: 200px
+}
+
+.AdminPanelButton:hover {
+    background: var(--secondary);
+}
+
+.AdminPanelButton a {
+    color: var(--dark);
+}
+
+/* Username Label */
+.username {
+    list-style: none;
+    font-family: Cairo;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    direction: rtl;
+    margin: 10px 0;
+}
+
+/* Divider Line */
+.line {
+    background-color: var(--dark);
+    height: 3px;
+    width: 20px;   
+}
+
+/* keyframes */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

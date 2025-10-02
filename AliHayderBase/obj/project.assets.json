@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     "net9.0-android35.0": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -2810,6 +2813,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -2823,6 +2827,9 @@
       }
     },
     "net9.0-android35.0/android-arm64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -5631,6 +5638,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -5644,6 +5652,9 @@
       }
     },
     "net9.0-android35.0/android-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -8452,6 +8463,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -8465,6 +8477,9 @@
       }
     },
     "net9.0-android35.0/iossimulator-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -11273,6 +11288,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -11286,6 +11302,9 @@
       }
     },
     "net9.0-android35.0/maccatalyst-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -14094,6 +14113,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -14107,6 +14127,9 @@
       }
     },
     "net9.0-android35.0/win10-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "GoogleGson/2.13.0.1": {
         "type": "package",
         "dependencies": {
@@ -16915,6 +16938,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -16928,6 +16952,9 @@
       }
     },
     "net9.0-ios18.5": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -17844,6 +17871,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -17857,6 +17885,9 @@
       }
     },
     "net9.0-ios18.5/android-arm64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -18773,6 +18804,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -18786,6 +18818,9 @@
       }
     },
     "net9.0-ios18.5/android-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -19702,6 +19737,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -19715,6 +19751,9 @@
       }
     },
     "net9.0-ios18.5/iossimulator-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -20631,6 +20670,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -20644,6 +20684,9 @@
       }
     },
     "net9.0-ios18.5/maccatalyst-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -21560,6 +21603,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -21573,6 +21617,9 @@
       }
     },
     "net9.0-ios18.5/win10-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -22489,6 +22536,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -22502,6 +22550,9 @@
       }
     },
     "net9.0-maccatalyst18.5": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -23418,6 +23469,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -23431,6 +23483,9 @@
       }
     },
     "net9.0-maccatalyst18.5/android-arm64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -24347,6 +24402,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -24360,6 +24416,9 @@
       }
     },
     "net9.0-maccatalyst18.5/android-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -25276,6 +25335,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -25289,6 +25349,9 @@
       }
     },
     "net9.0-maccatalyst18.5/iossimulator-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -26205,6 +26268,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -26218,6 +26282,9 @@
       }
     },
     "net9.0-maccatalyst18.5/maccatalyst-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -27134,6 +27201,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -27147,6 +27215,9 @@
       }
     },
     "net9.0-maccatalyst18.5/win10-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -28063,6 +28134,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -28076,6 +28148,9 @@
       }
     },
     "net9.0-windows10.0.19041": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -29242,6 +29317,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -29255,6 +29331,9 @@
       }
     },
     "net9.0-windows10.0.19041/android-arm64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -30359,6 +30438,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -30372,6 +30452,9 @@
       }
     },
     "net9.0-windows10.0.19041/android-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -31476,6 +31559,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -31489,6 +31573,9 @@
       }
     },
     "net9.0-windows10.0.19041/iossimulator-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -32593,6 +32680,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -32606,6 +32694,9 @@
       }
     },
     "net9.0-windows10.0.19041/maccatalyst-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -33710,6 +33801,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -33723,6 +33815,9 @@
       }
     },
     "net9.0-windows10.0.19041/win10-x64": {
+      "Font.Awesome/5.15.4": {
+        "type": "package"
+      },
       "Microsoft.AspNetCore.Authorization/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -34837,6 +34932,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "Font.Awesome": "5.15.4",
           "Microsoft.AspNetCore.Components.Authorization": "9.0.9",
           "Microsoft.AspNetCore.Components.Web": "9.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9"
@@ -34851,6 +34947,60 @@
     }
   },
   "libraries": {
+    "Font.Awesome/5.15.4": {
+      "sha512": "Okg91rA7RWbd+eKyBNNnvlvzFee7A4yIi0WdTrJMVPos1ntONAVn/m96Ex9qvVXKKiroBZ1vtCXtpFMnHNof1g==",
+      "type": "package",
+      "path": "font.awesome/5.15.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/all.css",
+        "Content/Content/all.min.css",
+        "Content/Content/brands.css",
+        "Content/Content/brands.min.css",
+        "Content/Content/fontawesome.css",
+        "Content/Content/fontawesome.min.css",
+        "Content/Content/regular.css",
+        "Content/Content/regular.min.css",
+        "Content/Content/solid.css",
+        "Content/Content/solid.min.css",
+        "Content/Content/svg-with-js.css",
+        "Content/Content/svg-with-js.min.css",
+        "Content/Content/v4-shims.css",
+        "Content/Content/v4-shims.min.css",
+        "Content/Scripts/fontawesome/all.js",
+        "Content/Scripts/fontawesome/all.min.js",
+        "Content/Scripts/fontawesome/brands.js",
+        "Content/Scripts/fontawesome/brands.min.js",
+        "Content/Scripts/fontawesome/conflict-detection.js",
+        "Content/Scripts/fontawesome/conflict-detection.min.js",
+        "Content/Scripts/fontawesome/fontawesome.js",
+        "Content/Scripts/fontawesome/fontawesome.min.js",
+        "Content/Scripts/fontawesome/regular.js",
+        "Content/Scripts/fontawesome/regular.min.js",
+        "Content/Scripts/fontawesome/solid.js",
+        "Content/Scripts/fontawesome/solid.min.js",
+        "Content/Scripts/fontawesome/v4-shims.js",
+        "Content/Scripts/fontawesome/v4-shims.min.js",
+        "Content/webfonts/fa-brands-400.eot",
+        "Content/webfonts/fa-brands-400.svg",
+        "Content/webfonts/fa-brands-400.ttf",
+        "Content/webfonts/fa-brands-400.woff",
+        "Content/webfonts/fa-brands-400.woff2",
+        "Content/webfonts/fa-regular-400.eot",
+        "Content/webfonts/fa-regular-400.svg",
+        "Content/webfonts/fa-regular-400.ttf",
+        "Content/webfonts/fa-regular-400.woff",
+        "Content/webfonts/fa-regular-400.woff2",
+        "Content/webfonts/fa-solid-900.eot",
+        "Content/webfonts/fa-solid-900.svg",
+        "Content/webfonts/fa-solid-900.ttf",
+        "Content/webfonts/fa-solid-900.woff",
+        "Content/webfonts/fa-solid-900.woff2",
+        "font.awesome.5.15.4.nupkg.sha512",
+        "font.awesome.nuspec"
+      ]
+    },
     "GoogleGson/2.13.0.1": {
       "sha512": "7dxQ5gnwWrezEUrtpUvDWTOOT0ymn7uejtbceF6djAtdBaqrxbzna6r8eGxQe2T4M09Ozpuz4P0LiV8/jgLBQQ==",
       "type": "package",

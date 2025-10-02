@@ -4,19 +4,21 @@ using AliHayderBase.Shared.Core.Interfaces;
 using AliHayderBase.Shared.DTOs.Request;
 using AliHayderBase.Shared.DTOs.Response;
 using Blazored.LocalStorage;
+using Microsoft.AspNetCore.Components.Authorization;
 
 public class WebAuthService : IAuthService
 {
     private readonly ILocalStorageService _localStorage;
     private readonly HttpClient _http;
-
-
     public event Action? OnLogin;
     public event Action? OnLogout;
-    public WebAuthService(HttpClient http, ILocalStorageService localStorage)
+    private readonly WebAuthProvider _authProvider;
+
+    public WebAuthService(HttpClient http, ILocalStorageService localStorage, WebAuthProvider authProvider)
     {
         _http = http;
         _localStorage = localStorage;
+        _authProvider = authProvider;
         Console.WriteLine("WebAuthService constructed.");
     }
 
@@ -121,7 +123,27 @@ public class WebAuthService : IAuthService
 
     }
 
+    public async Task<AuthenticationState> GetAuthenticationStateAsync()
+    {
+        return await _authProvider.GetAuthenticationStateAsync();
 
+    }
+
+    public bool IsInRole(string role)
+    {
+        var state = _authProvider.GetAuthenticationStateAsync().Result;
+        var user = state.User;
+        return user.Identity?.IsAuthenticated == true && user.IsInRole(role);
+
+    }
+
+    public string? GetUserName()
+    {
+        var state = _authProvider.GetAuthenticationStateAsync().Result;
+        var user = state.User;
+        return user.Identity?.IsAuthenticated == true ? user.Identity.Name : null;
+
+    }
 }
 
 

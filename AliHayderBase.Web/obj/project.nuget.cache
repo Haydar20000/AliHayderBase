@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BRUs5rxqRTs=",
+  "dgSpecHash": "fVZqlf98kK0=",
   "success": true,
   "projectFilePath": "D:\\Blazor\\BlazorHybridMAUI+web\\AliHayderBase\\AliHayderBase.Web\\AliHayderBase.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hay19\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
+    "C:\\Users\\hay19\\.nuget\\packages\\font.awesome\\5.15.4\\font.awesome.5.15.4.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\google.apis\\1.71.0\\google.apis.1.71.0.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\google.apis.auth\\1.71.0\\google.apis.auth.1.71.0.nupkg.sha512",
     "C:\\Users\\hay19\\.nuget\\packages\\google.apis.core\\1.71.0\\google.apis.core.1.71.0.nupkg.sha512",

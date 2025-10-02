@@ -4,6 +4,12 @@
 @inject IAuthService AuthService
 @inject NavigationManager Navigation
 
+@inject INavigationTracker Tracker
+
+@* <HeadContent>  
+     <link href="lib/font-awesome/css/all.min.css" rel="stylesheet" />    
+</HeadContent> *@
+
 <div id="theHeader">
     <Header />
 </div>
@@ -17,3 +23,10 @@
 <div id="theFooter">
     <Footer />
 </div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        Tracker.Record(Navigation.Uri);
+    }
+}

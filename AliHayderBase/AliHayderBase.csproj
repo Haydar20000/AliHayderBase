@@ -71,7 +71,10 @@
   <ItemGroup>
     <ProjectReference Include="..\AliHayderBase.Shared\AliHayderBase.Shared.csproj" />
   </ItemGroup>
-  <Target Name="CopySharedAssets" AfterTargets="Build">
-    <Copy SourceFiles="..\AliHayderBase.Shared\Assets\Css\Style.css" DestinationFolder="wwwroot\Css\" />
-  </Target>
+  <Target Name="CopySharedAssetsToMaui" AfterTargets="Build">
+  <ItemGroup>
+    <SharedAssets Include="..\AliHayderBase.Shared\Assets\**\*" />
+  </ItemGroup>
+  <Copy SourceFiles="@(SharedAssets)" DestinationFolder="Resources\%(RecursiveDir)" />
+</Target>
 </Project>
