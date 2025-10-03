@@ -25,8 +25,18 @@
 </div>
 
 @code {
+    private bool isFadingOut = false;
+
     protected override void OnInitialized()
     {
         Tracker.Record(Navigation.Uri);
+        Navigation.LocationChanged += async (_, args) =>
+        {
+            isFadingOut = true;
+            StateHasChanged();
+            await Task.Delay(500); // Match animation duration
+            isFadingOut = false;
+            StateHasChanged();
+        };
     }
 }

@@ -1,2 +1,20 @@
 @page "/register"
-<h1>register Page </h1>
+
+<div class="@animationClass">
+
+    <h1>register Page </h1>
+</div>
+
+
+@code {
+    private string animationClass = "page-content";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            animationClass += " fade-in";
+            StateHasChanged(); // Trigger re-render with animation
+        }
+    }
+}

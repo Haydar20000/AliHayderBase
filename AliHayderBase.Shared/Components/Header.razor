@@ -1,6 +1,5 @@
 @using AliHayderBase.Shared.Core.Interfaces
 @using Microsoft.AspNetCore.Components.Authorization
-@inject AuthenticationStateProvider AuthStateProvider
 @inject NavigationManager Navigation
 @inject IAuthService AuthService
 @inject INavigationTracker Tracker
@@ -28,7 +27,7 @@
     </button>
     <div class="menu @(isMenuOpen ? "menu-open" : "")">
         <div>
-            <div>
+            <div class="menu-content @(isFadingOut ? "fade-out" : "")">
                 <AuthorizeView>
                     <Authorized>
                         <p class="username">مرحبا @userName</p>
@@ -71,7 +70,9 @@
                             <li class="AdminPanelButton">
                                 <NavLink href="/send-email" @onclick="ToggleMenu">ارسل رساله</NavLink>
                             </li>
-                            <li class="AdminPanelButton"><button @onclick="()=> {Logout(); ToggleMenu();}">تسجيل الخروج</button></li>
+                            <li class="AdminPanelButton"><button
+                                    @onclick=" async ()  => {await Logout();await ToggleMenu();}">تسجيل الخروج</button>
+                            </li>
                         </ul>
                     </Authorized>
                     <NotAuthorized>
@@ -95,25 +96,28 @@
     private bool isFadingOut;
     private string? userName;
     private bool isAdmin;
-
-private async Task ToggleMenu()
-{
-    if (isMenuOpen)
+    protected override async Task OnInitializedAsync()
     {
-        // Start fade-out animation
-        isFadingOut = true;
-
-        // Wait for animation to finish
-        await Task.Delay(400);
-
-        isFadingOut = false;
-        isMenuOpen = false;
+        var (name, admin) = await AuthService.GetUserInfoAsync();
+        userName = name;
+        isAdmin = admin;
     }
-    else
+
+
+    private async Task ToggleMenu()
     {
-        isMenuOpen = true;
+        if (isMenuOpen)
+        {
+            isFadingOut = true;
+            await Task.Delay(400);
+            isFadingOut = false;
+            isMenuOpen = false;
+        }
+        else
+        {
+            isMenuOpen = true;          
+        }
     }
-}
 
 
 
@@ -147,7 +151,7 @@ private async Task ToggleMenu()
         Navigation.NavigateTo("/");
     }
 
-  
+
 }
 
 
