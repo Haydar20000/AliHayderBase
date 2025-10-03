@@ -9,20 +9,22 @@
 @* <HeadContent>  
      <link href="lib/font-awesome/css/all.min.css" rel="stylesheet" />    
 </HeadContent> *@
+<div class="layout-container">
 
-<div id="theHeader">
-    <Header />
-</div>
+    <div class="layout-header">
+        <Header />
+    </div>
 
-<div id="theBody">
-    <main>
+    <main class="layout-body ">
         @Body
     </main>
+
+
+    <div class="layout-footer">
+        <Footer />
+    </div>
 </div>
 
-<div id="theFooter">
-    <Footer />
-</div>
 
 @code {
     private bool isFadingOut = false;
@@ -30,13 +32,14 @@
     protected override void OnInitialized()
     {
         Tracker.Record(Navigation.Uri);
-        Navigation.LocationChanged += async (_, args) =>
+        @* Navigation.LocationChanged += async (_, args) =>
         {
             isFadingOut = true;
             StateHasChanged();
             await Task.Delay(500); // Match animation duration
             isFadingOut = false;
             StateHasChanged();
-        };
+        }; *@
     }
+    
 }

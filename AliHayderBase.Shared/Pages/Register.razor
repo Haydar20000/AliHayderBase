@@ -1,20 +1,108 @@
 @page "/register"
+@using Models.ViewModels
+@inject NavigationManager Nav
 
-<div class="@animationClass">
+<div class="page-content fade-in">
+    <EditForm Model="@registerModel" OnValidSubmit="HandleRegister">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
-    <h1>register Page </h1>
+        <div >
+            <h1 class="pageTitle">تسجيل مستخدم جديد</h1>
+
+            <span class="pageComment">كلمة السر يجب ان تكون باللغة الانكليزية ولاتقل عن 8 احرف مع حرف واحد كبير على
+                الاقل</span>
+            <div class="pageComment">
+                <span class="inputInfo">اسم تسجيل الدخول يجب ان يكون باللغة الانكليزية ولايقل عن 6 احرف</span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-group-InputLabel">أسم تسجيل الدخول</label>
+                <InputText class="form-group-InputText" @bind-Value="registerModel.UserName" />
+                <ValidationMessage For="@(() => registerModel.UserName)" class="form-group-Validation"/>
+            </div>
+
+            <div class="form-group">
+                <label class="form-group-InputLabel">أسم المستخدم الثلاثي</label>
+                <InputText class="form-group-InputText" @bind-Value="registerModel.UserFullName" />
+                <ValidationMessage For="@(() => registerModel.UserFullName)" class="form-group-Validation"/>
+            </div>
+
+            @* <div class="form-group">
+                <label class="Mytabel-Inputlabel">المهنة</label>
+                <InputText class="Mytabel-input" @bind-Value="registerModel.Job" />
+                <ValidationMessage For="@(() => registerModel.Job)" />
+            </div>
+
+            <div class="form-group">
+                <label class="Mytabel-Inputlabel">البريد الاكتروني</label>
+                <InputText class="Mytabel-input" @bind-Value="registerModel.Email" />
+                <ValidationMessage For="@(() => registerModel.Email)" />
+            </div>
+
+            <div class="form-group">
+                <label class="Mytabel-Inputlabel">رقم الهاتف</label>
+                <InputText class="Mytabel-input" @bind-Value="registerModel.PhoneNumber" />
+                <ValidationMessage For="@(() => registerModel.PhoneNumber)" />
+            </div> *@
+
+            @* <div class="form-group">
+                <label class="Mytabel-Inputlabel">كلمة السر</label>
+                <InputText class="Mytabel-input" type="password" @bind-Value="registerModel.Password" />
+                <ValidationMessage For="@(() => registerModel.Password)" />
+            </div>
+
+            <div class="form-group">
+                <label class="Mytabel-Inputlabel">تاكيد كلمة السر</label>
+                <InputText class="Mytabel-input" type="password" @bind-Value="registerModel.ConfirmPassword" />
+                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" />
+            </div> *@
+
+            @* <div class="form-center" style="margin-top:20px;">
+                <span>
+                    <span class="mainTitle" style="font-size:16px;margin-left:20px;">هل انت عضو سابق في النقابة؟</span>
+                    <button type="button" class="mybtn2" style="width:72px;"
+                        @onclick="() => ShowExtraFields(true)">نعم</button>
+                    <button type="button" class="mybtn2" style="width:72px;"
+                        @onclick="() => ShowExtraFields(false)">كلا</button>
+                </span>
+            </div> *@
+
+            @* @if (showExtraFields)
+            {
+                <div>
+                    <div class="form-group">
+                        <label class="Mytabel-Inputlabel">رقم الهوية النقابية</label>
+                        <InputText class="Mytabel-input" @bind-Value="registerModel.IdNumber" />
+                    </div>
+                    <div class="form-group">
+                        <label class="Mytabel-Inputlabel" style="font-size:12px">رقم الهاتف المثبت في استمارة
+                            التسجيل</label>
+                        <InputText class="Mytabel-input" @bind-Value="registerModel.RPhoneNumber" />
+                    </div>
+                </div>
+            } *@
+
+            <div class="form-center" style="margin-top:20px;">
+                <button class="mybtn2" style="width:100px" type="submit">تسجيل</button>
+                <button class="mybtn2" style="width:72px;" @onclick='() => Nav.NavigateTo("index")'>عودة</button>
+            </div>
+        </div>
+    </EditForm>
+
 </div>
-
-
 @code {
-    private string animationClass = "page-content";
+    private Register_Account_ViewModel registerModel = new();
+    private bool showExtraFields = false;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    private void ShowExtraFields(bool show)
     {
-        if (firstRender)
-        {
-            animationClass += " fade-in";
-            StateHasChanged(); // Trigger re-render with animation
-        }
+        showExtraFields = show;
+    }
+
+    private async Task HandleRegister()
+    {
+        // TODO: Call your backend API to register the user
+        // Example: await AuthService.RegisterAsync(registerModel);
     }
 }
