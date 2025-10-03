@@ -4,10 +4,10 @@
 
 <div class="page-content fade-in">
     <EditForm Model="@registerModel" OnValidSubmit="HandleRegister">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
+        @* <DataAnnotationsValidator />
+        <ValidationSummary /> *@
 
-        <div >
+        <div>
             <h1 class="pageTitle">تسجيل مستخدم جديد</h1>
 
             <span class="pageComment">كلمة السر يجب ان تكون باللغة الانكليزية ولاتقل عن 8 احرف مع حرف واحد كبير على
@@ -19,73 +19,71 @@
             <div class="form-group">
                 <label class="form-group-InputLabel">أسم تسجيل الدخول</label>
                 <InputText class="form-group-InputText" @bind-Value="registerModel.UserName" />
-                <ValidationMessage For="@(() => registerModel.UserName)" class="form-group-Validation"/>
+                <ValidationMessage For="@(() => registerModel.UserName)" class="form-group-Validation" />
             </div>
 
             <div class="form-group">
                 <label class="form-group-InputLabel">أسم المستخدم الثلاثي</label>
                 <InputText class="form-group-InputText" @bind-Value="registerModel.UserFullName" />
-                <ValidationMessage For="@(() => registerModel.UserFullName)" class="form-group-Validation"/>
+                <ValidationMessage For="@(() => registerModel.UserFullName)" class="form-group-Validation" />
             </div>
-
-            @* <div class="form-group">
-                <label class="Mytabel-Inputlabel">المهنة</label>
-                <InputText class="Mytabel-input" @bind-Value="registerModel.Job" />
-                <ValidationMessage For="@(() => registerModel.Job)" />
-            </div>
-
             <div class="form-group">
-                <label class="Mytabel-Inputlabel">البريد الاكتروني</label>
-                <InputText class="Mytabel-input" @bind-Value="registerModel.Email" />
-                <ValidationMessage For="@(() => registerModel.Email)" />
+                <label class="form-group-InputLabel">المهنة</label>
+                <InputText class="form-group-InputText" @bind-Value="registerModel.Job" />
+                <ValidationMessage For="@(() => registerModel.Job)" class="form-group-Validation" />
+            </div>
+            <div class="form-group">
+                <label class="form-group-InputLabel">البريد الاكتروني</label>
+                <InputText class="form-group-InputText" @bind-Value="registerModel.Email" />
+                <ValidationMessage For="@(() => registerModel.Email)" class="form-group-Validation" />
+            </div>
+            <div class="form-group">
+                <label class="form-group-InputLabel">رقم الهاتف</label>
+                <InputText class="form-group-InputText" @bind-Value="registerModel.PhoneNumber" />
+                <ValidationMessage For="@(() => registerModel.PhoneNumber)" class="form-group-Validation" />
+            </div>
+            <div class="form-group">
+                <label class="form-group-InputLabel">كلمة السر</label>
+                <InputText type="password" class="form-group-InputText" @bind-Value="registerModel.Password" />
+                <ValidationMessage For="@(() => registerModel.Password)" class="form-group-Validation" />
+            </div>
+            <div class="form-group">
+                <label class="form-group-InputLabel">تاكيد كلمة السر</label>
+                <InputText type="password" class="form-group-InputText" @bind-Value="registerModel.ConfirmPassword" />
+                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" class="form-group-Validation" />
             </div>
 
-            <div class="form-group">
-                <label class="Mytabel-Inputlabel">رقم الهاتف</label>
-                <InputText class="Mytabel-input" @bind-Value="registerModel.PhoneNumber" />
-                <ValidationMessage For="@(() => registerModel.PhoneNumber)" />
-            </div> *@
 
-            @* <div class="form-group">
-                <label class="Mytabel-Inputlabel">كلمة السر</label>
-                <InputText class="Mytabel-input" type="password" @bind-Value="registerModel.Password" />
-                <ValidationMessage For="@(() => registerModel.Password)" />
-            </div>
 
-            <div class="form-group">
-                <label class="Mytabel-Inputlabel">تاكيد كلمة السر</label>
-                <InputText class="Mytabel-input" type="password" @bind-Value="registerModel.ConfirmPassword" />
-                <ValidationMessage For="@(() => registerModel.ConfirmPassword)" />
-            </div> *@
-
-            @* <div class="form-center" style="margin-top:20px;">
+            <div class="form-center" style="margin-top:20px;">
                 <span>
-                    <span class="mainTitle" style="font-size:16px;margin-left:20px;">هل انت عضو سابق في النقابة؟</span>
-                    <button type="button" class="mybtn2" style="width:72px;"
+                    <span class="pageComment" >هل انت عضو سابق في النقابة؟</span>
+                    <button type="button" class="btn" style="width:72px;"
                         @onclick="() => ShowExtraFields(true)">نعم</button>
-                    <button type="button" class="mybtn2" style="width:72px;"
+                    <button type="button" class="btn" style="width:72px;"
                         @onclick="() => ShowExtraFields(false)">كلا</button>
                 </span>
-            </div> *@
+            </div>
 
-            @* @if (showExtraFields)
+            @if (showExtraFields)
             {
                 <div>
                     <div class="form-group">
-                        <label class="Mytabel-Inputlabel">رقم الهوية النقابية</label>
-                        <InputText class="Mytabel-input" @bind-Value="registerModel.IdNumber" />
+                        <label class="form-group-InputLabel">رقم الهوية النقابية</label>
+                        <InputText  class="form-group-InputText" @bind-Value="registerModel.IdNumber" />
+                        <ValidationMessage For="@(() => registerModel.IdNumber)" class="form-group-Validation" />
                     </div>
                     <div class="form-group">
-                        <label class="Mytabel-Inputlabel" style="font-size:12px">رقم الهاتف المثبت في استمارة
-                            التسجيل</label>
-                        <InputText class="Mytabel-input" @bind-Value="registerModel.RPhoneNumber" />
-                    </div>
+                        <label class="form-group-InputLabel" style="font-size:13px">رقم الهاتف في استمارة الانتماء</label>
+                        <InputText type="password" class="form-group-InputText" @bind-Value="registerModel.RPhoneNumber" />
+                        <ValidationMessage For="@(() => registerModel.RPhoneNumber)" class="form-group-Validation" />
+                    </div>                   
                 </div>
-            } *@
+            }
 
             <div class="form-center" style="margin-top:20px;">
-                <button class="mybtn2" style="width:100px" type="submit">تسجيل</button>
-                <button class="mybtn2" style="width:72px;" @onclick='() => Nav.NavigateTo("index")'>عودة</button>
+                <button class="btn" style="width:100px" type="submit">تسجيل</button>
+                <button class="btn" style="width:72px;" @onclick='() => Nav.NavigateTo("index")'>عودة</button>
             </div>
         </div>
     </EditForm>

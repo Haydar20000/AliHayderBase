@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AliHayderBase.Web.Client",
   "resources": {
-    "hash": "sha256-abh9nLYGNl7INOJ46Fy3qGmOMydxZklf809LO2bc9jc=",
+    "hash": "sha256-kNpxTMkXv11xGHRpSx7C8k2iah9JN0wJmkgUgrMca5E=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Microsoft.AspNetCore.Authorization.z6jo10m0rd.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -214,10 +214,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "AliHayderBase.Shared.vifw5l55db.wasm": "AliHayderBase.Shared.wasm",
-      "AliHayderBase.Shared.7fu9xq4add.pdb": "AliHayderBase.Shared.pdb",
-      "AliHayderBase.Web.Client.6v8hi8y366.wasm": "AliHayderBase.Web.Client.wasm",
-      "AliHayderBase.Web.Client.t7xm1xef3c.pdb": "AliHayderBase.Web.Client.pdb"
+      "AliHayderBase.Shared.3fxxml5ydf.wasm": "AliHayderBase.Shared.wasm",
+      "AliHayderBase.Shared.8usk2evszw.pdb": "AliHayderBase.Shared.pdb",
+      "AliHayderBase.Web.Client.yzu4883040.wasm": "AliHayderBase.Web.Client.wasm",
+      "AliHayderBase.Web.Client.6luu7tkc6s.pdb": "AliHayderBase.Web.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.9ih887ebfz.js": "sha256-oS7IRiQoVt9ThQ7Y2UM3XoeY0JqPD02cg9IvRdufn2w="
@@ -440,12 +440,12 @@
       "WindowsBase.vy2l5u79y6.wasm": "sha256-ufB9Mo5joMyUs3DzXWWBFFIZNEVrt6h9N5stYB6Oln4=",
       "mscorlib.xd6mv31d55.wasm": "sha256-1YSLR2eZt3ceALFV//vZUF2AloxVil3VlrW1zZYPSEI=",
       "netstandard.kaml52uspo.wasm": "sha256-HLEwBpLfzKw2/zGSVzHzFJxznCkt/WIjahrziiMrOpA=",
-      "AliHayderBase.Shared.vifw5l55db.wasm": "sha256-acDNdk2+jmTCI9n+Pijgs9ZV3FJs2DphdBMujv/aMbU=",
-      "AliHayderBase.Web.Client.6v8hi8y366.wasm": "sha256-Ipm3PCt9kj9v0pnzANW5kE0Vac2RkoligjqeLJdpwr0="
+      "AliHayderBase.Shared.3fxxml5ydf.wasm": "sha256-kb5La9QYDJ3GLaXIZAmVyl7JyXrwygzO5O5IRdVDKmw=",
+      "AliHayderBase.Web.Client.yzu4883040.wasm": "sha256-EjJp371moQGZp02Zw34GK/44niYxZ38U193tNGTGcTY="
     },
     "pdb": {
-      "AliHayderBase.Shared.7fu9xq4add.pdb": "sha256-vdTK0Q5FXqOr1N570lVrMFc6KrbGwmFv0Y04XhcC18s=",
-      "AliHayderBase.Web.Client.t7xm1xef3c.pdb": "sha256-V0lLp7w6mAnJ9u3w98rLxtlmDXWjeXdQ+FJZry7dLhw="
+      "AliHayderBase.Shared.8usk2evszw.pdb": "sha256-AAc0jbWTUVWOUy6DJcRX1dvSshnrD+JbGthK9UKcvtY=",
+      "AliHayderBase.Web.Client.6luu7tkc6s.pdb": "sha256-WjHsmARkO7hK7NQAKz6MP6zFnor1A2+IVS4lKjGNWC0="
     }
   },
   "cacheBootResources": true,

@@ -300,6 +300,7 @@ footer {
     box-shadow: var(--shadow);
     padding: 1rem;
 }
+
 .companyText {
     color: white;
     font-size: 1.2rem;
@@ -327,6 +328,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .form-group {
     display: flex;
     flex-direction: row;
@@ -340,26 +342,59 @@ footer {
 .form-group-InputLabel {
     min-width: 150px;
     font-weight: bold;
+    padding: 0.6rem;
+    background: var(--dark);
+    color: var(--light);
+    width: 200px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .form-group-InputText {
-    flex: 1;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
+    /* flex: 1;     */
     border-radius: 4px;
+    background: var(--primary);
+    padding: 0.6rem;
+    color: var(--dark);
+    font-size: 1.1rem;
+    direction: rtl;
+    height: 40px;
+    min-width: 600px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .form-group-Validation {
     width: 100%;
     color: red;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
     margin-top: 0.25rem;
-    text-align: center;
+    text-align: start;
 }
 
-
 /* input data component style   ---- end*/
+
+/* Buttons Style ---- Start */
+.btn {
+    background: var(--primary);
+    display: inline-block;
+    padding: 0.6rem;
+    color: var(--dark);
+    text-decoration: none;
+    border: var(--secondary) solid .1px;
+    box-shadow: var(--buttonShadow);
+    font-family: Cairo;
+    font-size: 1.1rem;
+    text-align: center
+}
+.btn:hover{
+     background: var(--secondary);
+}
+/* Buttons Style ---- End */
+
 
 /* keyframes */
 
